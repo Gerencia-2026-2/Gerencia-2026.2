@@ -1,0 +1,172 @@
+# Termo de Abertura
+
+## SubTracker
+
+**Gerentes do Projeto**
+
+- Davi Luiz Rodrigues da Conceição
+- João Henrique Lima Gualberto
+- Michael Patrick Ferreira da Silva Borba
+- Vinicius da Silva Mendes
+
+**Data:** 07/09/2026
+
+# Sumário
+
+1. Nome do Sistema e Propósito
+2. Business Case Simplificado
+3. Descrição de Alto Nível e Escopo
+4. Premissas
+5. Restrições Iniciais
+6. Critérios de Encerramento
+7. Critérios de Sucesso do Projeto
+8. Critério de Saída
+9. Objetivos Mensuráveis
+10. Requisitos de Alto Nível
+11. Cronograma de Marcos
+12. Riscos Iniciais do Projeto
+13. Partes Interessadas (Stakeholders)
+14. Recursos Financeiros Pré-aprovados
+15. Requisitos de Aprovação
+16. Nome e Autoridade do Patrocinador
+
+# 1. Nome do Sistema e Propósito
+
+**Nome do sistema:** SubTracker, Gestão Inteligente de Assinaturas e Recorrências.
+
+**Propósito:** Centralizar o gerenciamento de serviços por assinatura contratados pelo usuário, permitindo o acompanhamento dos ciclos de faturamento, a emissão de alertas de renovação e o controle do impacto financeiro recorrente.
+
+# 2. Business Case Simplificado
+
+No cenário atual, a proliferação de serviços por assinatura, como streaming de vídeo e música, armazenamento em nuvem e jogos, fragmenta as cobranças ao longo do mês. Essa fragmentação dificulta que os usuários tenham uma visão consolidada de seus compromissos financeiros, especialmente quando possuem diversas assinaturas com diferentes valores e datas de cobrança.
+
+Como consequência, o usuário pode perder a percepção do custo total recorrente de suas assinaturas e continuar pagando por serviços que utiliza pouco ou que já não atendem às suas necessidades.
+
+O SubTracker centraliza seus contratos em uma visão cronológica, simples e previsível. Dessa forma, o usuário passa a ter maior visibilidade sobre quanto está comprometendo de sua renda com serviços recorrentes e pode tomar decisões mais conscientes sobre a manutenção, pausa ou cancelamento de planos.
+
+# 3. Descrição de Alto Nível e Escopo
+
+O SubTracker consiste em uma aplicação web destinada ao gerenciamento e acompanhamento de serviços por assinatura. O sistema permitirá ao usuário registrar suas assinaturas, acompanhar cobranças recorrentes, visualizar projeções de gastos e obter informações sobre o impacto financeiro de seus compromissos recorrentes.
+
+## Funcionalidades dentro do escopo
+
+- Cadastro, consulta, alteração e exclusão de assinaturas.
+- Cadastro e gerenciamento de serviços/provedores.
+- Cadastro e gerenciamento de categorias.
+- Registro e consulta do histórico de cobranças.
+- Controle do status das assinaturas.
+- Cálculo dos gastos recorrentes.
+- Projeção de gastos mensais e anuais.
+- Distribuição dos gastos por categoria.
+- Painel para acompanhamento das assinaturas.
+- Relatório de impacto financeiro.
+- Catálogo pré-configurado de serviços.
+- Possibilidade de cadastrar serviços personalizados.
+
+## Funcionalidades fora do escopo
+
+- Pagamento real de assinaturas.
+- Cancelamento automático de assinaturas junto aos provedores.
+- Integração direta com bancos.
+- Integração com cartões de crédito.
+- Integração automática com serviços externos para obtenção de cobranças.
+- Não possui integração com serviços de assinatura.
+
+# 4. Premissas
+
+As premissas representam condições consideradas verdadeiras para o planejamento do projeto.
+
+- O usuário fornecerá manualmente os dados de suas assinaturas.
+- Os valores das assinaturas estarão disponíveis para cadastro.
+- O usuário será responsável por manter seus dados atualizados.
+- O catálogo inicial de serviços será previamente cadastrado no sistema.
+- Os cálculos serão realizados com base nas informações fornecidas pelo usuário.
+- As cobranças serão registradas pelo sistema a partir dos dados disponíveis, sem necessidade de integração bancária.
+- O projeto será desenvolvido como uma aplicação web.
+- O sistema terá uma primeira versão com funcionalidades limitadas ao escopo definido.
+- Os integrantes da equipe terão acesso ao ambiente necessário para desenvolvimento e testes.
+
+# 5. Restrições Iniciais
+
+- O projeto possui prazo definido para desenvolvimento e entrega.
+- A equipe possui recursos humanos e técnicos limitados.
+- O sistema deverá permanecer dentro do escopo definido para a primeira versão.
+- Não haverá integração obrigatória com instituições financeiras.
+- Não será realizado processamento financeiro real dentro do sistema.
+- O projeto deverá utilizar as tecnologias definidas pela equipe/disciplina.
+- Alterações significativas no escopo deverão ser avaliadas antes de sua implementação.
+
+# 6. Critérios de Encerramento
+
+O projeto será considerado encerrado quando:
+
+- Os requisitos definidos para a primeira versão tiverem sido implementados ou formalmente justificados.
+- Os 17 casos de uso definidos forem contemplados conforme o escopo aprovado.
+- As principais funcionalidades estiverem integradas entre frontend, backend e banco de dados.
+- Os cálculos de gastos e projeções estiverem funcionando corretamente.
+- O histórico de cobranças puder ser consultado.
+- O relatório de impacto financeiro estiver disponível.
+- Os testes previstos tiverem sido executados.
+- Os principais erros identificados tiverem sido corrigidos ou formalmente registrados.
+- A documentação necessária estiver concluída.
+- O sistema estiver disponível para apresentação/avaliação.
+- O produto final for aprovado pelos responsáveis pelo projeto.
+
+# 7. Critérios de Sucesso do Projeto
+
+O projeto será considerado bem-sucedido se entregar uma aplicação web funcional capaz de centralizar as assinaturas do usuário e transformar seus dados de recorrência em informações úteis para acompanhamento financeiro.
+
+O sucesso será observado principalmente pela capacidade do sistema de cadastrar, organizar, acompanhar, registrar cobranças, calcular, projetar e apresentar impacto financeiro.
+
+Dessa forma, o SubTracker deverá cumprir não apenas o objetivo técnico de armazenar assinaturas, mas também o objetivo de negócio de aumentar a visibilidade dos compromissos recorrentes e apoiar decisões sobre gastos com serviços por assinatura.
+
+# 8. Critério de Saída
+
+- Falta de investimento no projeto.
+- Possibilidade de alcançar o mesmo valor por outra forma mais simples e menos custosa.
+- Entrega abaixo do requisitado pelos desenvolvedores e pelos gerentes do projeto.
+
+# 9. Objetivos Mensuráveis
+
+- Lançar o produto em 6 meses.
+- Custo máximo de R$ 10.000,00 (valor máximo que o patrocinador está disposto a investir para validar se o negócio vale a pena).
+
+# 10. Requisitos de Alto Nível
+
+- Cadastro e visualização das assinaturas do usuário.
+- Cálculo e projeção de gastos mensais e anuais.
+- Alertas de renovação/vencimento das assinaturas.
+- Relatório de gastos por categoria.
+
+# 11. Cronograma de Marcos
+
+- Mês 1: Planejamento e prototipagem (Business Case e Termo de Abertura).
+- Meses 2 e 3: Desenvolvimento do frontend.
+- Meses 4 e 5: Desenvolvimento do backend.
+- Mês 6: Entrega do software e da documentação final.
+
+# 12. Riscos Iniciais do Projeto
+
+- Médio, devido à existência de aplicativos semelhantes de gerenciamento financeiro, específicos para assinaturas ou gerais, que já atendem parte dessa necessidade no mercado.
+
+# 13. Partes Interessadas (Stakeholders)
+
+- **Patrocinador:** Diogo.
+- **Gerentes de Projeto:** Michael, Davi, João e Vinicius.
+- **Equipe de Desenvolvimento:** Ronald, Rodrigo, Thiago e Matheus.
+- **Clientes:** usuários que gerenciam suas assinaturas pelo aplicativo.
+- **Empresas de assinatura e seus stakeholders.**
+
+# 14. Recursos Financeiros Pré-aprovados
+
+- R$ 1.000,00 iniciais, valor liberado para prototipagem, modelagem, elicitação de requisitos, avaliação da viabilidade do negócio e montagem do plano de projeto.
+
+# 15. Requisitos de Aprovação
+
+- Software pronto para produção.
+- Quem decide e aprova: o patrocinador, Diogo Silveira.
+
+# 16. Nome e Autoridade do Patrocinador
+
+- **Autoridade:** Diogo Silveira Mendonça.
+- Decide se o projeto está aprovado, dentro do escopo e de acordo com o PMBOK.
