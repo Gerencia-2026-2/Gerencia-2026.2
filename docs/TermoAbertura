@@ -44,6 +44,53 @@ Como consequência, o usuário pode perder a percepção do custo total recorren
 
 O SubTracker centraliza seus contratos em uma visão cronológica, simples e previsível. Dessa forma, o usuário passa a ter maior visibilidade sobre quanto está comprometendo de sua renda com serviços recorrentes e pode tomar decisões mais conscientes sobre a manutenção, pausa ou cancelamento de planos.
 
+## Trabalhos Concorrentes e Outras opções
+
+Este tópico visa mostrar o que já existe no mercado e o que se planeja ser feito.
+
+O software tem a ideia de Controlar Financeiramente os Múltiplos Serviços de Assinaturas que estão espalhados, através de centralização, visualização do quanto de renda mensal está comprometida com esses serviços. Está previsto também a existência de atualizações de registros dos valores das assinaturas. Considerando que é um webAplicativo implica existência de compartilhamento de informações pessoais (dados financeiros) o que pode ser um risco, no ato de registro de conta e dados para ser feito as consultas.
+
+
+- **Uso de Planilhas:** O potencial Cliente pode fazer uso do Excel/Google Sheets para ele mesmo preencher os valores, fazer previsões, manualmente preencher, fazendo isso possivelmente junto de outras despesas além de serviços de assinatura.
+
+- **Simplesmente Ignorar:** Alguns deles podem levar em consideração que o gasto é muito pouco e que não vale a pena ter cuidado com isso. Além disso considerando a existência de pirataria: Setores de serviço de assinatura que lidam com fornecimento de conteúdo lidam com o compartilhamento ilegal de filmes, jogos, cursos.
+
+- **Organizze:** Permite Inserção Manual das Despesas e Saldo, permite Conectar com suas contas do banco, podendo ver despesas automaticamente, permite ver previsões de saldo para saber se vai faltar ou sobrar saldo, layout Simples, mas é necessário pagar assinatura (Preços de 30/45/60 reais) para receber alguns dos recursos mencionados.
+
+- **Minhas Finanças:** Inserção Manual de Despesas e Saldo, Observar Gráficos das despesas, importar dados bancários automaticamente, previsões, relatórios, categorização dos dados, etc, com planos tendo preços acessíveis (0/14/29/59 reais).
+
+- **Indika.tv:** Faz o serviço de gerenciamento de assinaturas de streaming, faz recomendações personalizadas em relação a filmes.
+
+## Viabilidade do Negócio
+
+Depende, se for possível cobrar um preço menor ou não cobrar (usando anúncios para receber algum rendimento), otimizar o serviço para que o gasto seja mínimo. 
+
+## Gastos Previstos
+
+*(Podem mudar de valor)*
+
+### MVP – para Validar na Prática
+
+- **Banco de Dados – Supabase:** inicialmente gratuito com Base de Dados de 500MB com API requests ilimitados, tendo 500MB de RAM compartilhado.
+- **Domínio:** Subdomínio Gratuito Usando Vercel.
+- **Email Transacional – Resend:** Gratuito
+
+**Total por Mês:** R$ 0
+
+### Versão Inicial
+
+- **Banco de Dados – Supabase:** R$ 130 ao mês – 100GB – podendo ter 100 mil usuários ativos no site.
+- **Domínio – Registro.br:** R$ 40 ao ano (≈ R$ 3,33 ao mês)
+
+**Total por Mês:** ≈ R$ 133,33
+
+Considerando que o site se pague em 6 meses, basta multiplicar valores por 6:
+
+6 x 133,33 ≈ **R$ 800** de gasto
+
+
+
+
 # 3. Descrição de Alto Nível e Escopo
 
 O SubTracker consiste em uma aplicação web destinada ao gerenciamento e acompanhamento de serviços por assinatura. O sistema permitirá ao usuário registrar suas assinaturas, acompanhar cobranças recorrentes, visualizar projeções de gastos e obter informações sobre o impacto financeiro de seus compromissos recorrentes.
