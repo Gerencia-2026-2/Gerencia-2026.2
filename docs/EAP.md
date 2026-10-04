@@ -1,75 +1,92 @@
+# EAP - SubTracker
+
+## 1. Visão geral
+A Estrutura Analítica do Projeto (EAP) do SubTracker foi reestruturada para refletir o escopo da versão 1, conforme o Termo de Abertura, a Fonte de Verde e as respostas do grupo. A EAP está alinhada ao produto e ao projeto, sem incluir Cobranças nem manutenção de Categorias como módulos independentes.
+
+## 2. Estrutura analítica do projeto
+
 ```mermaid
 flowchart TD
-    Root["SubTracker"]
+    root["1 SubTracker"]
 
-    Root --> P["Prototipagem"]
-    Root --> CS["Client-Side"]
-    Root --> SS["Server-side"]
-    Root --> F["Finalização"]
+    root --> p1["1.1 Gerenciamento do Projeto"]
+    root --> p2["1.2 Prototipagem e Requisitos"]
+    root --> p3["1.3 Client-Side"]
+    root --> p4["1.4 Server-Side"]
+    root --> p5["1.5 Integração, Testes e Validação"]
+    root --> p6["1.6 Encerramento"]
 
-    %% Prototipagem
-    P --> P1["Organização de ideias"]
-    P --> P2["Descrição do Business Case"]
-    P --> P3["Definição do Processo de Negócio Principal"]
-    P --> P4["Descrição dos casos de uso"]
-    P --> P5["Definição dos Requisitos Funcionais"]
-    P --> P6["Priorização dos Requisitos"]
-    P --> P7["Matriz CRUD"]
-    P --> P8["Protótipo das telas HTML"]
+    p1 --> p1a["1.1.1 Documentação e acompanhamento do projeto"]
+    p1 --> p1b["1.1.2 Monitoramento, riscos e comunicação"]
 
-    %% Client-Side
-    CS --> CS1["Componentização do Front-end"]
-    CS --> CS2["Criação de Rotas"]
-    CS --> CS3["Gerenciamento de estado e comunicação com a API"]
+    p2 --> p2a["1.2.1 Levantamento, priorização e rastreabilidade"]
+    p2 --> p2b["1.2.2 Prototipagem e matrizes de requisitos"]
 
-    CS1 --> CS1a["Estrutura e Layout"]
-    CS1 --> CS1b["Componentes de Assinatura"]
-    CS1 --> CS1c["Componentes de Cobranças"]
-    CS1 --> CS1d["Componentes de Serviços"]
-    CS1 --> CS1e["Componentes de Categorias"]
-    CS1 --> CS1f["Componentes Financeiros"]
+    p3 --> p3a["1.3.1 Estrutura de front-end e rotas"]
+    p3 --> p3b["1.3.2 Assinaturas e dashboard"]
+    p3 --> p3c["1.3.3 Serviços e cancelamento"]
+    p3 --> p3d["1.3.4 Tetos e consumo orçamentário"]
+    p3 --> p3e["1.3.5 Extratos, histórico e conciliação"]
+    p3 --> p3f["1.3.6 Relatório e tutorial"]
 
-    CS2 --> CS2a["Rota inicial / Dashboard"]
-    CS2 --> CS2b["Rotas de Serviços"]
-    CS2 --> CS2c["Rotas de Categorias"]
-    CS2 --> CS2d["Rotas de Cobranças"]
-    CS2 --> CS2e["Rota de Relatório"]
+    p4 --> p4a["1.4.1 Estrutura da API e modelagem do banco"]
+    p4 --> p4b["1.4.2 API de Assinaturas"]
+    p4 --> p4c["1.4.3 API de Serviços"]
+    p4 --> p4d["1.4.4 API de Tetos"]
+    p4 --> p4e["1.4.5 Importação de extratos e conciliação"]
+    p4 --> p4f["1.4.6 Relatório, projeção e acesso"]
 
-    CS3 --> CS3a["Gerenciamento dos Dados de Assinaturas"]
-    CS3 --> CS3b["Gerenciamento dos Dados de Serviços"]
-    CS3 --> CS3c["Gerenciamento dos Dados de Categorias"]
-    CS3 --> CS3d["Gerenciamento dos Dados de Cobranças"]
-    CS3 --> CS3e["Integração com API"]
-    CS3 --> CS3f["Tratamento de Estados de Carregamento e Erro"]
+    p5 --> p5a["1.5.1 Integração front-end/back-end"]
+    p5 --> p5b["1.5.2 Testes de validação funcional"]
+    p5 --> p5c["1.5.3 Ajustes e validação final"]
 
-    %% Server-side
-    SS --> SS1["Estrutura da API"]
-    SS --> SS2["Modelagem do Banco de Dados"]
-    SS --> SS3["Criação dos Serviços e operações"]
-    SS --> SS4["Autenticação e controle de Acesso"]
-
-    SS1 --> SS1a["Estrutura do Projeto Backend"]
-    SS1 --> SS1b["Configuração do Servidor"]
-    SS1 --> SS1c["Configuração das Rotas"]
-
-    SS2 --> SS2a["Tabela de Assinaturas"]
-    SS2 --> SS2b["Tabela de Serviços"]
-    SS2 --> SS2c["Tabela de Categorias"]
-    SS2 --> SS2d["Tabela de Cobranças"]
-
-    SS3 --> SS3a["Operações de Assinaturas"]
-    SS3 --> SS3b["Operações de Serviços"]
-    SS3 --> SS3c["Operações de Categorias"]
-    SS3 --> SS3d["Operações de Cobranças"]
-    SS3 --> SS3e["Operações de Relatórios"]
-
-    SS4 --> SS4a["Cadastro de Usuário"]
-    SS4 --> SS4b["Login"]
-    SS4 --> SS4c["Controle de Acesso"]
-
-    %% Finalização
-    F --> F1["Integração do Front-end com o Back-end"]
-    F --> F2["Validação do Sistema"]
-    F --> F3["Entrega da Documentação Final"]
-    F --> F4["Entrega do Projeto"]
+    p6 --> p6a["1.6.1 Documentação final e entrega"]
 ```
+
+## 3. Tabela resumida da EAP
+
+| Código | Elemento | Nível | Responsável | Origem (UC/requisito) |
+| ------ | -------- | ----- | ----------- | --------------------- |
+| 1 | SubTracker | Projeto | Gerência + equipe de desenvolvimento | Projeto acadêmico SubTracker |
+| 1.1 | Gerenciamento do Projeto | Entrega | Gerência | Business Case, Termo de Abertura, Plano de Projeto |
+| 1.1.1 | Documentação e acompanhamento do projeto | Pacote | Gerência | Requisitos de gestão |
+| 1.1.2 | Monitoramento, riscos e comunicação | Pacote | Gerência | Riscos do Termo de Abertura |
+| 1.2 | Prototipagem e Requisitos | Entrega | Ronald, Rodrigo, Thiago | UC01–UC18 e protótipo |
+| 1.2.1 | Levantamento, priorização e rastreabilidade | Pacote | Ronald, Rodrigo, Thiago | UC01–UC18 |
+| 1.2.2 | Prototipagem e matrizes de requisitos | Pacote | Ronald, Rodrigo, Thiago | Prototipagem, CRUD, perfil x funcionalidade |
+| 1.3 | Client-Side | Entrega | Ronald, Rodrigo, Thiago | UC01–UC18 |
+| 1.3.1 | Estrutura de front-end e rotas | Pacote | Ronald | UC01–UC18 |
+| 1.3.2 | Assinaturas e dashboard | Pacote | Ronald | UC01–UC04, UC17 |
+| 1.3.3 | Serviços e cancelamento | Pacote | Thiago | UC05–UC08, UC18 |
+| 1.3.4 | Tetos e consumo orçamentário | Pacote | Equipe de desenvolvimento | UC09–UC12 |
+| 1.3.5 | Extratos, histórico e conciliação | Pacote | Rodrigo | UC13–UC16 |
+| 1.3.6 | Relatório e tutorial | Pacote | Ronald e Thiago | UC17–UC18 |
+| 1.4 | Server-Side | Entrega | Ronald, Rodrigo, Thiago | UC01–UC18 |
+| 1.4.1 | Estrutura da API e modelagem do banco | Pacote | Rodrigo | Requisito de alto nível |
+| 1.4.2 | API de Assinaturas | Pacote | Ronald | UC01–UC04 |
+| 1.4.3 | API de Serviços | Pacote | Thiago | UC05–UC08 |
+| 1.4.4 | API de Tetos | Pacote | Equipe de desenvolvimento | UC09–UC12 |
+| 1.4.5 | Importação de extratos e conciliação | Pacote | Rodrigo | UC13–UC16 |
+| 1.4.6 | Relatório, projeção e acesso | Pacote | Ronald e Thiago | UC17–UC18 |
+| 1.5 | Integração, Testes e Validação | Entrega | Ronald, Rodrigo, Thiago | UC01–UC18 |
+| 1.5.1 | Integração front-end/back-end | Pacote | Ronald, Rodrigo, Thiago | Integridade do sistema |
+| 1.5.2 | Testes de validação funcional | Pacote | Ronald, Rodrigo, Thiago | UC01–UC18 |
+| 1.5.3 | Ajustes e validação final | Pacote | Ronald, Rodrigo, Thiago | Critérios de sucesso |
+| 1.6 | Encerramento | Entrega | Gerência + equipe | Entregas finais |
+| 1.6.1 | Documentação final e entrega | Pacote | Gerência | Encerramento do projeto |
+
+## 4. Observações sobre o escopo
+- O escopo da versão 1 foi mantido em UC01–UC18, conforme a Fonte de Verde, sem incluir Cobranças como módulo próprio.
+- Categoria ficou como domínio-base com seed populado, e não como módulo de manutenção.
+- O histórico de cobranças permanece vinculado à Assinatura, conforme resposta do grupo.
+- A EAP foi estruturada em entregas de produto e projeto, seguindo o critério de decomposição da disciplina.
+
+## 5. Registro de uso de IA
+
+| O que foi sugerido | Decisão do grupo (aceito/recusado) | Justificativa |
+| ------------------ | ---------------------------------- | ------------- |
+| Revisão da estrutura da EAP para refletir o escopo da versão 1 |  |  |
+| Agrupar e alinhar UC05–UC08 com cancelamento e serviços |  |  |
+| Manter Categoria como seed, sem módulo de manutenção |  |  |
+| Remover Cobranças e manutenção de Categorias do escopo da versão 1 |  |  |
+| Ajustar a EAP para refletir o estado real do repositório e os riscos do Termo |  |  |
