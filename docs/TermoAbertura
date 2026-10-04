@@ -281,10 +281,8 @@ Nenhum recurso financeiro foi pré-aprovado para este projeto. O desenvolvimento
 
 # 13. Requisitos para Aprovação do Projeto
 
-- O sistema deve estar funcional e responsivo.
-- Os requisitos definidos devem estar todos implementados.
-- A documentação prevista deve estar concluída e disponibilizada no GitHub.
-- O projeto deve ser aprovado pelo patrocinador.
+- A documentação prevista para aprovação deve estar concluída e disponibilizada no repositório do GitHub, dentro do prazo estabelecido pela disciplina.
+- O projeto deve ser avaliado e aprovado pelo patrocinador, com a validação registrada ao final.
 
 ---
 
