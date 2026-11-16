@@ -2,7 +2,7 @@
 
 # SubTracker
 
-**Versão:** 1.1  
+**Versão:** 1.2  
 **Data:** 05/10/2026
 
 ## Patrocinador
@@ -69,7 +69,7 @@ O projeto tem como objetivo o desenvolvimento de uma aplicação web responsiva 
 
 A equipe do projeto é composta por desenvolvedores web e gerentes de projeto, atuando de forma integrada para garantir a entrega do produto e o alcance dos objetivos estabelecidos.
 
-Os desenvolvedores são responsáveis pela elicitação e documentação de requisitos, implementação das funcionalidades, desenvolvimento do sistema, realização de testes e disponibilização da aplicação em ambiente de produção.
+Os desenvolvedores são responsáveis pela elicitação e documentação de requisitos, implementação das funcionalidades, desenvolvimento do sistema, realização de testes e disponibilização da aplicação em ambiente local para validação.
 
 Os gerentes de projeto são responsáveis pelo planejamento, acompanhamento e controle das atividades, assegurando que o projeto seja conduzido de acordo com as práticas de gerenciamento, bem como pelo monitoramento de prazos, recursos, riscos e comunicação entre os membros da equipe.
 
@@ -91,15 +91,15 @@ O projeto SubTracker tem como finalidade centralizar informações sobre assinat
 
 ## 3.1 Objetivo Geral
 
-Desenvolver uma aplicação web responsiva denominada SubTracker, destinada ao gerenciamento de assinaturas recorrentes.
+Desenvolver uma aplicação web responsiva denominada SubTracker, destinada ao gerenciamento de assinaturas recorrentes, com backend real integrado ao frontend.
 
 ## 3.2 Objetivos Mensuráveis
 
-**Programadores**
+**Desenvolvedores**
 
 - Implementar os casos de uso definidos para a primeira versão do projeto.
-- Garantir a integração entre frontend, backend e banco de dados até o Marco 3.
-- Concluir os testes de segurança até o Marco 3.
+- Garantir a integração entre frontend, backend real e banco de dados até o Marco 3.
+- Realizar a validação funcional manual (checklist de testes) até o Marco 3.
 - Desenvolver uma aplicação web responsiva compatível com diferentes tamanhos de tela.
 - Disponibilizar o código-fonte e os artefatos do projeto no repositório GitHub da equipe.
 - Concluir toda a documentação prevista pelo projeto até o Marco 3.
@@ -109,6 +109,7 @@ Desenvolver uma aplicação web responsiva denominada SubTracker, destinada ao g
 - Realizar o acompanhamento periódico do cronograma e registrar a evolução das atividades planejadas.
 - Identificar, registrar e monitorar os principais riscos do projeto durante sua execução.
 - Garantir que as entregas sejam realizadas dentro dos prazos estabelecidos no planejamento.
+- Elaborar e entregar os Status Reports (SR1 a SR4) nos prazos definidos.
 
 ---
 
@@ -119,7 +120,7 @@ O projeto será considerado bem-sucedido se:
 - As funcionalidades previstas no escopo forem implementadas e estiverem operacionais.
 - A aplicação permitir o gerenciamento de assinaturas recorrentes de forma centralizada.
 - O sistema apresentar corretamente os cálculos e projeções financeiras previstos.
-- A integração entre frontend, backend e banco de dados estiver concluída e funcionando adequadamente.
+- A integração entre frontend, backend real e banco de dados estiver concluída e funcionando adequadamente.
 - A documentação do projeto estiver completa e disponível no repositório.
 - Os artefatos de gerenciamento produzidos pela equipe estiverem atualizados e refletirem o andamento do projeto.
 - Os riscos identificados durante a execução forem monitorados e tratados adequadamente.
@@ -132,13 +133,14 @@ O projeto será considerado bem-sucedido se:
 
 O SubTracker é uma aplicação web responsiva destinada ao gerenciamento de assinaturas recorrentes. O sistema permite que os usuários centralizem informações sobre serviços contratados, acompanhem cobranças periódicas, visualizem gastos recorrentes e obtenham projeções financeiras relacionadas às suas assinaturas.
 
-Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de importação de extratos bancários para auxiliar na identificação de despesas recorrentes, gerenciamento de tetos orçamentários por categoria e emissão de relatórios financeiros que apoiem a tomada de decisão sobre a manutenção ou cancelamento de serviços.
+Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de importação de extratos bancários (em CSV) para auxiliar na identificação de despesas recorrentes, gerenciamento de tetos orçamentários por categoria e emissão de relatórios financeiros que apoiem a tomada de decisão sobre a manutenção ou cancelamento de serviços.
 
 ## 5.2 Funcionalidades no Escopo
 
-- Gestão de assinaturas e serviços, incluindo catálogo, serviços personalizados e controle de status.
-- Importação de extratos bancários e conciliação de lançamentos recorrentes.
-- Registro e consulta do histórico de cobranças.
+- Gestão de assinaturas, incluindo cadastro, edição, ativação/pausa, exclusão e controle de status.
+- Consulta ao catálogo de serviços disponibilizados pelo sistema.
+- Importação de extratos bancários em CSV e conciliação de lançamentos recorrentes.
+- Registro e consulta do histórico de cobranças vinculado à assinatura.
 - Cálculo e projeção de gastos recorrentes, mensais, anuais e por categoria, com tetos orçamentários.
 - Painel de acompanhamento e relatório de impacto financeiro.
 - Links e orientações para cancelamento junto aos provedores.
@@ -152,6 +154,10 @@ Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de impo
 - Integração com cartões de crédito.
 - Sincronização automática com serviços de assinatura externos.
 - Aplicativos nativos para dispositivos móveis.
+- Cadastro, edição e exclusão de serviços no catálogo (apenas consulta).
+- Histórico de arquivos de extrato importados.
+- Descarte persistente de lançamentos de extrato.
+- Leitura de arquivos OFX.
 
 ---
 
@@ -160,8 +166,8 @@ Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de impo
 ## 6.1 Requisitos de Alto Nível
 
 - Permitir o cadastro, consulta, atualização e exclusão de assinaturas.
-- Permitir a manutenção e consulta de serviços disponibilizados pelo sistema.
-- Possibilitar a importação de extratos bancários para identificação de despesas recorrentes.
+- Permitir a consulta de serviços disponibilizados pelo sistema.
+- Possibilitar a importação de extratos bancários em CSV para identificação de despesas recorrentes.
 - Calcular e projetar gastos mensais e anuais relacionados às assinaturas cadastradas.
 - Permitir a definição de tetos orçamentários por categoria e o acompanhamento do seu consumo.
 - Disponibilizar relatórios de impacto financeiro e distribuição de gastos por categoria.
@@ -172,7 +178,7 @@ Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de impo
 
 - **Operações financeiras:** o projeto não inclui nenhuma operação financeira real. O sistema apenas registra e analisa informações, sem pagar, cobrar ou processar valores.
 - **Ações junto aos provedores:** o sistema não age em nome do usuário. O cancelamento é sempre feito por ele, com apoio de links e orientações.
-- **Fontes de dados:** os dados entram apenas por cadastro manual ou importação de extratos. Não há conexão direta com bancos, cartões ou plataformas de assinatura.
+- **Fontes de dados:** os dados entram apenas por cadastro manual ou importação de extratos em CSV. Não há conexão direta com bancos, cartões ou plataformas de assinatura.
 - **Plataforma:** a entrega é uma aplicação web responsiva, sem aplicativos nativos.
 - **Dados sensíveis:** o sistema não armazena dados de cartões de pagamento.
 
@@ -187,8 +193,9 @@ Além do cadastro manual de assinaturas, a plataforma oferece mecanismos de impo
 - Plano do Projeto.
 - Estrutura Analítica do Projeto (EAP).
 - Dicionário da EAP.
-- Sistema SubTracker.
+- Sistema SubTracker (frontend + backend real + banco de dados).
 - Manual de utilização e documentação disponibilizados no repositório GitHub.
+- Status Reports (SR1 a SR4).
 
 ## 7.2 Cronograma de Marcos
 
@@ -206,34 +213,41 @@ Entregáveis:
 
 Entregáveis:
 
-- Frontend implementado.
-- Funcionalidades principais previstas para a primeira versão.
+- Frontend implementado com as funcionalidades principais.
+- Backend simulado (`json-server`) para demonstração.
 
-### Marco 3 - Integração do Sistema e Encerramento do Projeto (DD/11-12/2026)
+### Marco 3 - Integração do Sistema e Encerramento do Projeto (07 a 11/12/2026)
 
 Entregáveis:
 
-- Integração entre frontend, backend e banco de dados.
-- Correção dos principais problemas identificados durante os testes.
+- Integração entre frontend, backend real (Express + Prisma + PostgreSQL) e banco de dados.
+- Correção dos principais problemas identificados durante os testes manuais.
 - Documentação final do projeto.
 - Manual de utilização.
 - Repositório GitHub atualizado.
+
+### Status Reports
+
+- **SR1 (12/10/2026):** Verificação de escopo e aceite do Marco 1.
+- **SR2 (02/11/2026):** Relatório de prazo, custo e valor agregado (EVM).
+- **SR3 (16/11/2026):** Relatório de engajamento, comunicação e riscos.
+- **SR4 (data e escopo a definir):** Relatório final complementar.
 
 ---
 
 # 8. Premissas
 
-| Premissa                                                                       | Risco associado                                                                                    |
-| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| O usuário fornecerá manualmente os dados de suas assinaturas                   | Dados não informados ou incompletos, gerando cálculos e projeções incorretos                       |
-| Os valores das assinaturas estarão disponíveis para cadastro                   | Valores indisponíveis ou imprecisos, comprometendo os cálculos                                     |
-| O usuário será responsável por manter seus dados atualizados                   | Dados desatualizados, gerando gastos recorrentes e projeções incorretos                            |
-| O catálogo inicial de serviços será previamente cadastrado                     | Catálogo incompleto ou não concluído a tempo, obrigando o usuário a cadastrar serviços manualmente |
-| Os cálculos dependerão dos dados informados pelo usuário                       | Resultados incorretos por erro de digitação ou de informação do usuário                            |
-| Os extratos bancários importados estarão em formatos que o sistema consiga ler | Falha na importação de extratos por formato não suportado                                          |
-| O projeto será desenvolvido como aplicação web                                 | Mudanças nos requisitos, como pedido de outra plataforma ou de aplicativo nativo                   |
-| Os integrantes terão acesso aos recursos necessários para desenvolvimento      | Atraso no desenvolvimento                                                                          |
-| As entregas seguirão o cronograma definido pelo patrocinador                   | Atraso no desenvolvimento                                                                          |
+| Premissa | Risco associado |
+| -------- | --------------- |
+| O usuário fornecerá manualmente os dados de suas assinaturas | Dados não informados ou incompletos, gerando cálculos e projeções incorretos |
+| Os valores das assinaturas estarão disponíveis para cadastro | Valores indisponíveis ou imprecisos, comprometendo os cálculos |
+| O usuário será responsável por manter seus dados atualizados | Dados desatualizados, gerando gastos recorrentes e projeções incorretos |
+| O catálogo inicial de serviços será previamente cadastrado | Catálogo incompleto ou não concluído a tempo, obrigando o usuário a cadastrar serviços manualmente |
+| Os cálculos dependerão dos dados informados pelo usuário | Resultados incorretos por erro de digitação ou de informação do usuário |
+| Os extratos bancários importados estarão em formatos que o sistema consiga ler (CSV) | Falha na importação de extratos por formato não suportado |
+| O projeto será desenvolvido como aplicação web | Mudanças nos requisitos, como pedido de outra plataforma ou de aplicativo nativo |
+| Os integrantes terão acesso aos recursos necessários para desenvolvimento | Atraso no desenvolvimento |
+| As entregas seguirão o cronograma definido pelo patrocinador | Atraso no desenvolvimento |
 
 ---
 
@@ -244,26 +258,28 @@ Entregáveis:
 - Não será realizado processamento financeiro real.
 - O projeto deverá utilizar as tecnologias definidas pelo patrocinador.
 - Mudanças significativas de escopo deverão ser previamente avaliadas pelo patrocinador.
+- A importação de extratos está limitada ao formato CSV.
 
 ---
 
 # 10. Riscos Iniciais do Projeto
 
-| Risco                                              | Probabilidade | Impacto | Resposta                                              |
-| -------------------------------------------------- | ------------- | ------- | ----------------------------------------------------- |
-| Atraso no desenvolvimento                          | Média         | Alta    | Replanejamento das atividades                         |
-| Ausência de integrantes da equipe                  | Baixa         | Alta    | Redistribuição das tarefas ou cancelamento do projeto |
-| Mudanças nos requisitos                            | Alta          | Média   | Revisões frequentes do escopo                         |
-| Dificuldades de comunicação entre os participantes | Média         | Média   | Alertar o patrocinador                                |
-| Baixa participação dos integrantes da equipe       | Baixa         | Alta    | Alertar o patrocinador                                |
-
-
+| Risco | Probabilidade | Impacto | Resposta |
+| ----- | ------------- | ------- | -------- |
+| Atraso no desenvolvimento | Média | Alta | Replanejamento das atividades |
+| Ausência de integrantes da equipe | Baixa | Alta | Redistribuição das tarefas ou cancelamento do projeto |
+| Mudanças nos requisitos | Alta | Média | Revisões frequentes do escopo |
+| Dificuldades de comunicação entre os participantes | Média | Média | Alertar o patrocinador |
+| Baixa participação dos integrantes da equipe | Baixa | Alta | Alertar o patrocinador |
+| Dificuldades na integração entre frontend e backend real | Média | Alto | Acompanhamento técnico contínuo e testes de integração manuais |
+| Falha na leitura de diferentes layouts de CSV | Média | Alto | Testes manuais com modelos variados; contingência alocada |
+| Capacidade insuficiente dos desenvolvedores (4 h/semana) | Média | Alta | Negociação de dedicação extra ou redistribuição de tarefas |
 
 ---
 
 # 11. Recursos Financeiros Pré-aprovados
 
-Nenhum recurso financeiro foi pré-aprovado para este projeto. O desenvolvimento utilizará apenas recursos já disponíveis à equipe: horas dos integrantes, repositório GitHub e ferramentas de uso gratuito.
+Nenhum recurso financeiro foi pré-aprovado para este projeto. O desenvolvimento utilizará apenas recursos já disponíveis à equipe: horas dos integrantes, repositório GitHub e ferramentas de uso gratuito. O esforço estimado é de 251 horas (228h de pacotes + 23h de contingência), valorado a R$ 10,00/hora para fins de custo econômico. O desembolso de caixa real é R$ 0,00.
 
 ---
 
@@ -279,7 +295,7 @@ Nenhum recurso financeiro foi pré-aprovado para este projeto. O desenvolvimento
 
 # 13. Requisitos para Aprovação do Projeto
 
-- A documentação prevista para aprovação deve estar concluída e disponibilizada no repositório do GitHub, dentro do prazo estabelecido pela disciplina.
+- A documentação prevista para aprovação deve estar concluída e disponibilizada no repositório do GitHub, dentro do prazo estabelecido.
 - O projeto deve ser avaliado e aprovado pelo patrocinador, com a validação registrada ao final.
 
 ---
@@ -307,5 +323,3 @@ O projeto poderá ser cancelado caso:
 | Papel        | Nome                    | Assinatura | Data |
 | ------------ | ----------------------- | ---------- | ---- |
 | Patrocinador | Diogo Silveira Mendonça |            |      |
-
-
