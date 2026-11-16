@@ -1,11 +1,3 @@
-O problema é que o Obsidian (e a maioria dos editores Markdown) quebra quando há **blocos de código dentro de outros blocos de código** (ex: a caixa de texto da EAP e o gráfico do Mermaid ficam dentro do bloco principal). 
-
-Para resolver isso de vez, eu removi as caixas de código (````text` e ````mermaid`) e converti a EAP em uma lista normal, e a rede de atividades em texto explicativo. Assim, o documento fica 100% em markdown puro, sem nenhum caractere especial que quebre a cópia.
-
-Aqui está o documento limpo para você copiar e colar:
-
-***
-
 # Plano do Projeto
 
 # SubTracker
@@ -539,6 +531,3 @@ O projeto será encerrado quando o sistema estiver funcional com os módulos int
 
 Encerrar ou reduzir o projeto cedo pode ser a decisão correta quando o valor esperado deixar de justificar o esforço. O patrocinador deve ser consultado se R2 se confirmar e nenhuma opção for viável, se R1 se concretizar sem que o conciliador funcione, se houver perda de integrantes ou se a entrega não puder mais ser cumprida. A alternativa preferida é entregar o que estiver pronto por ordem de prioridade.
 
-
-
----
